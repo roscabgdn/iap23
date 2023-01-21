@@ -1,0 +1,35 @@
+header.site-header {
+    padding: 60px 0 100px;
+    .container {
+        grid-template-columns: 2fr 6fr 3fr;
+        align-items: center;
+    }
+    nav.main-nav {
+        ul {
+           display: flex;
+           justify-content: space-between;
+        }
+        li {
+            &.current-menu-item {
+               a {
+                background-color: $accent_color;
+                color:#FFF;
+                border-radius: $border-radius;
+               }
+            }
+            a {
+                padding:7px 20px;
+                &:hover {
+                    background-color: $accent_color;
+                    color:#FFF;
+                    border-radius: $border-radius;
+                }
+            
+          }  
+        }
+    }
+
+    .site-search {
+        text-align: right;
+    }
+}

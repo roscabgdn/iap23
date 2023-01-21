@@ -1,0 +1,41 @@
+body {
+    font-size: $c_font_size;
+    line-height: $line_height;
+    font-family: $main_font;
+    color: $text_color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: $main_font;
+    line-height: $line_height;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: $h1_font_size;
+}
+
+h2, .h2 {
+    font-size: $h2_font_size;
+}
+
+h3, .h3 {
+    font-size: $h3_font_size;
+}
+
+p {
+    
+}
+
+a {
+    color:$main_color;
+    text-decoration: none;
+    &:hover {
+        color:$accent_color;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap:$gap;
+    max-width:$container_width;
+    margin:0 auto;
+    padding:0 20px;
+    &--small {
+        max-width: $container_small;
+    }
+    &:has( > .sidebar ) {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+.content {}
+.sidebar {
+    
+}

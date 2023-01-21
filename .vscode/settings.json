@@ -1,0 +1,39 @@
+{
+    "liveSassCompile.settings.forceBaseDirectory": "./wp-content/themes/iap23/assets/scss",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./wp-content/themes/iap23"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "./wp-content/themes/iap23"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "**/wp-admin/**",
+        "**/wp-includes/**",
+        "**/wp-content/plugins/**",
+        "**/wp-content/themes/twentythirteen/**",
+        "**/wp-content/themes/twentyfourteen/**",
+        "**/wp-content/themes/twentyfifteen/**",
+        "**/wp-content/themes/twentysixteen/**",
+        "**/wp-content/themes/twentyseventeen/**",
+        "**/wp-content/themes/twentynineteen/**",
+        "**/wp-content/themes/twentytwenty/**",
+        "**/wp-content/themes/twentytwentyone/**",
+        "**/wp-content/themes/twentytwentytwo/**",
+        "**/wp-content/themes/twentytwentythree/**",
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.compileOnWatch": true,
+    //autoprefix, will auto add perfix like -webkit- -moz-..
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

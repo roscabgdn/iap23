@@ -1,0 +1,38 @@
+// Font Variables
+$main_font: 'Open Sans', sans-serif;
+$headings_font: '';
+$content_font: $main_font;
+
+// Typography
+$main_font_size: 16px;
+$line_height: 130%;
+$c_font_size: $main_font_size;
+
+// astea ar trebui calculate in functie de fz :)
+$h1_font_size: 48px;
+$h2_font_size: 36px;
+$h3_font_size: 28px;
+$h4_font_size: 18px;
+$h5_font_size: 16px;
+$h6_font_size: 14px;
+
+// Colors
+$main_color: #111210;
+$secondary_color: #9B9B9B;
+$third_color: #9283E0;
+$accent_color: #FF5480; 
+$background_color: #F9F9Fb;
+$text_color: $main_color;
+$link_color: $accent_color;
+$icons_color: $accent_color;
+
+
+
+// Container, Sidebar Widths
+$container_width: 1170px;
+$container_sidebar_width: 770px;
+$container_small: 970px;
+$sidebar_width: 380px;
+$gap: 20px;
+
+$border-radius:10px;
