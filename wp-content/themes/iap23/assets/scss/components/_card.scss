@@ -1,3 +1,27 @@
-.card {
-    background-color: brown;
+.news_card {
+    &-image {
+        img {
+            border-radius:4px;
+            width:100%;
+            height: auto;
+        }
+    }
+    &-meta {
+        color: $secondary_color;
+        text-transform: uppercase;
+        margin:15px 0 5px;
+        a {
+            display: inline-block;
+            padding:0px 5px;
+        }
+        .post-categories {
+            display: inline-block;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    &-title {
+
+    }
 }

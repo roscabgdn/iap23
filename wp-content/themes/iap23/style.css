@@ -27,7 +27,7 @@ h5, .h5,
 h6, .h6 {
   font-family: "Open Sans", sans-serif;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h1, .h1 {
@@ -46,7 +46,6 @@ a {
   color: #111210;
   text-decoration: none;
 }
-
 a:hover {
   color: #FF5480;
 }
@@ -54,15 +53,12 @@ a:hover {
 header.site-header {
   padding: 60px 0 100px;
 }
-
 header.site-header .container {
-  -ms-grid-columns: 2fr 6fr 3fr;
-      grid-template-columns: 2fr 6fr 3fr;
+  grid-template-columns: 2fr 6fr 3fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 header.site-header nav.main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,23 +67,19 @@ header.site-header nav.main-nav ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 header.site-header nav.main-nav li.current-menu-item a {
   background-color: #FF5480;
   color: #FFF;
   border-radius: 10px;
 }
-
 header.site-header nav.main-nav li a {
   padding: 7px 20px;
 }
-
 header.site-header nav.main-nav li a:hover {
   background-color: #FF5480;
   color: #FFF;
   border-radius: 10px;
 }
-
 header.site-header .site-search {
   text-align: right;
 }
@@ -98,30 +90,42 @@ header.site-header .site-search {
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 20px;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .container--small {
   max-width: 970px;
+  grid-template-columns: 1fr;
+  grid-gap: 105px;
 }
-
 .container:has(> .sidebar) {
-  -ms-grid-columns: 8fr 4fr;
-      grid-template-columns: 8fr 4fr;
+  grid-template-columns: 8fr 4fr;
 }
 
-.card {
-  background-color: brown;
+.news_card-image img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
 }
-
+.news_card-meta {
+  color: #9B9B9B;
+  text-transform: uppercase;
+  margin: 15px 0 5px;
+}
+.news_card-meta a {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.news_card-meta .post-categories {
+  display: inline-block;
+}
+.news_card-meta .post-categories li {
+  display: inline-block;
+}
 footer {
   background-color: gray;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

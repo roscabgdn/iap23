@@ -10,6 +10,8 @@
     padding:0 20px;
     &--small {
         max-width: $container_small;
+        grid-template-columns:1fr;
+        grid-gap:105px;
     }
     &:has( > .sidebar ) {
         grid-template-columns: 8fr 4fr;

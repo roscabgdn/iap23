@@ -20,13 +20,23 @@
  */
 function iap23_setup() {
 
-    wp_enqueue_style( 'iap23-reset', 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css', array(), false , 'all' );
-    wp_enqueue_style( 'iap23', get_template_directory_uri() . '/style.css', array(), false , 'all' );
+    wp_enqueue_style( 'iap23-reset', 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css', array(), false );
+    wp_enqueue_style( 'iap23', get_template_directory_uri() . '/style.css', array(), false );
 
 
     // Menu register
     register_nav_menu( 'primary', __( 'Header Menu', 'iap23' ) );
     register_nav_menu( 'secondary', __( 'Footer Menu', 'iap23' ) );
+    
+
+    add_theme_support( 'post-thumbnails' );
+    
+    // add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+    // add_theme_support( 'title-tag' );
+    // add_theme_support( 'custom-logo', array(
+    //     'height' => 480,
+    //     'width'  => 720,
+    // ) );
     
 }
 add_action( 'after_setup_theme', 'iap23_setup' );

@@ -19,7 +19,7 @@
                 <?php wp_nav_menu( 'primary' )?>
             </nav>
             <div class="site-search">
-                search
+                <?php get_search_form(); ?>
             </div>
         </div>
     </header>
