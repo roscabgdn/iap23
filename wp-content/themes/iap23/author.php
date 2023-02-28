@@ -18,6 +18,7 @@ get_header(); ?>
             get_template_part( 'content', 'none' ); 
         endif; 
     ?>
+    <?php wp_pagenavi(); ?>
 </div>
 <?php 
 get_footer();

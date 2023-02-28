@@ -17,6 +17,7 @@ body {
   line-height: 130%;
   font-family: "Open Sans", sans-serif;
   color: #111210;
+  background-color: #F9F9FB;
 }
 
 h1, .h1,
@@ -50,6 +51,44 @@ a:hover {
   color: #FF5480;
 }
 
+.wp-pagenavi .nextpostslink,
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .current,
+.wp-pagenavi .page {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CCCCCC;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 3px;
+  border-radius: 4px;
+}
+.wp-pagenavi .nextpostslink:hover,
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .current:hover,
+.wp-pagenavi .page:hover {
+  border-color: #FF5480;
+  color: #FFF;
+  background-color: #FF5480;
+}
+.wp-pagenavi .current {
+  background-color: #FF5480;
+  border-color: #FF5480;
+  color: #FFF;
+}
+.wp-pagenavi .first,
+.wp-pagenavi .last,
+.wp-pagenavi .pages {
+  border-radius: 4px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #CCCCCC;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 3px;
+  padding: 0 7px;
+}
 header.site-header {
   padding: 60px 0 100px;
 }
@@ -126,6 +165,18 @@ header.site-header .site-search {
 .news_card-meta .post-categories li {
   display: inline-block;
 }
-footer {
-  background-color: gray;
+.footer {
+  margin-top: 100px;
+  background-color: #FFF;
+  padding: 35px 0 36px;
+}
+.footer .container {
+  grid-template-columns: 2fr 6fr 3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-disclaimer {
+  font-size: 14px;
+  color: #9B9B9B;
 }/*# sourceMappingURL=style.css.map */

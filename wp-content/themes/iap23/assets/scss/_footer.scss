@@ -1,3 +1,14 @@
-footer {
-    background-color: gray;
+.footer {
+    margin-top: 100px;
+    background-color: #FFF;
+    padding:35px 0 36px;
+    .container {
+        grid-template-columns: 2fr 6fr 3fr;
+        align-items: center;
+    }
+    &-disclaimer {
+        font-size: 14px;
+        color:#9B9B9B;
+    }
+
 }

@@ -23,6 +23,7 @@ function iap23_setup() {
     wp_enqueue_style( 'iap23-reset', 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css', array(), false );
     wp_enqueue_style( 'iap23', get_template_directory_uri() . '/style.css', array(), false );
 
+    wp_enqueue_script( 'iap23-scrips', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), null , true );
 
     // Menu register
     register_nav_menu( 'primary', __( 'Header Menu', 'iap23' ) );
@@ -30,6 +31,8 @@ function iap23_setup() {
     
 
     add_theme_support( 'post-thumbnails' );
+    add_image_size( 'articol-lista', '972', '607', false );
+    add_image_size( 'articol-related', '80', '80', false );
     
     // add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
     // add_theme_support( 'title-tag' );

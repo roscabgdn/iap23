@@ -1,0 +1,41 @@
+.wp-pagenavi {
+    .nextpostslink,
+    .previouspostslink,
+    .current,
+    .page {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border:1px solid #CCCCCC;
+        line-height: 28px;
+        text-align: center;
+        margin:0 3px;
+        border-radius: 4px;
+        &:hover {
+            border-color:$accent_color;
+            color:#FFF;
+            background-color: $accent_color;
+        }
+    }
+    .current {
+        background-color: $accent_color;
+        border-color:$accent_color;
+        color:#FFF;
+    }
+    
+    .first,
+    .last,
+    .pages {
+        border-radius: 4px;
+        height: 30px;
+        display: inline-block;
+        border:1px solid #CCCCCC;
+        line-height: 28px;
+        text-align: center;
+        margin:0 3px;
+        padding:0 7px;
+    }
+    .pages {
+        // display: none;
+    }
+}

@@ -5,7 +5,8 @@
 
 get_header(); ?>
 <div class="container container--small">
-    not found
+    pagina nu exista
 </div>
+
 <?php 
 get_footer();

@@ -1,7 +1,7 @@
 <div class="news_card">
     <div class="news_card-image">
         <a href="<?php the_permalink()?>">
-            <?php the_post_thumbnail() ?>
+            <?php the_post_thumbnail('articol-lista') ?>
         </a>
     </div>
     <div class="news_card-meta">

@@ -11,7 +11,7 @@
     <header class="site-header">
         <div class="container">
             <div class="site-logo">
-                <a href="#">
+                <a href="<?php echo get_bloginfo('url'); ?>">
                     <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/site-logo.png" alt="">
                 </a>
             </div>
